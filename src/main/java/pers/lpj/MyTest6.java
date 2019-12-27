@@ -21,8 +21,11 @@ public class MyTest6 {
          * Singletion.c2 = 0
          *
          */
+        System.out.println("-------准备阶段结束-------");
         Singletion singletion = Singletion.getSingletion();
+        System.out.println("-------初始化阶段结束--------");
         System.out.println(Singletion.c1);
+
         System.out.println(Singletion.c2);
 
     }

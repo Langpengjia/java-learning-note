@@ -14,6 +14,7 @@ public class MyTest13 {
 
 
     public static void main(String[] args) {
+        //获取当前类的类加载器
         ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
 
         Enumeration<URL> resources = null;
@@ -43,6 +44,7 @@ public class MyTest13 {
         System.out.println(clazz2.getClassLoader());
 
 
+        //详细请查阅ClassLoader注释
         Class clazz3 =  MyTest14[].class;//和数组内元素的类加载器相同<MyTest14的类加载器为AppClassLoader>
         System.out.println(clazz3.getClassLoader());
 
