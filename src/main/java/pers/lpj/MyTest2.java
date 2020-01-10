@@ -34,7 +34,7 @@ class Parent2 {
      * <MyTest2 和 Parent2 没有任何关系！>
      * 本质上 调用类 并没有直接引用到定义常量的类，所以不会触发定义常量的类的初始化
      */
-    public static final String str = " hellp world！";
+    public static final String str = " hello world！";
 
     public static final int a = 127;
 

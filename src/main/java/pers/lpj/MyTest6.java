@@ -39,7 +39,13 @@ class Singletion {
 
     public static int c1;
 
+    /***
+     * 此处注意准备阶段
+     * 和初始化阶段的区别
+     */
+    public static int c2 = 0;
     private static Singletion singletion = new Singletion();
+
 
     private Singletion() {
         c1++;
@@ -48,11 +54,7 @@ class Singletion {
         System.out.println("初始化阶段c2==" + c2);
     }
 
-    /***
-     * 此处注意准备阶段
-     * 和初始化阶段的区别
-     */
-    public static int c2 = 0;
+
 
 
     public static Singletion getSingletion() {

@@ -27,13 +27,12 @@ class MyParent8 {
     }
 
     public static void main(String[] args) {
-
         System.out.println(MyChild8.b);
     }
 
 }
 
-class MyChild8 extends MyParent8{
+class MyChild8 extends MyParent8 {
     static int b = 20;
 
     static {

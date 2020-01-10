@@ -1,0 +1,6 @@
+Netty
+ 基于异步，事件驱动的
+ 重要知识点
+    RPC 框架
+       apache thrift
+       google proto buffers
