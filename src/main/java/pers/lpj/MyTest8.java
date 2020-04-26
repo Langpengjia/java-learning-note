@@ -12,9 +12,8 @@ package pers.lpj;
  * 先被类加载器加载的类先被初始化
  */
 public class MyTest8 {
-    public static void main(String[] args) {
-        System.out.println(MyChild8.b);
-    }
+
+
 
 }
 
