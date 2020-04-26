@@ -7,13 +7,13 @@ JVM 由 类加载子系统  运行时数据区  执行引擎  本地方法接口
 
        一  Java自带的类加载器
             1  根（启动）类加载器 <Bootstrap ClassLoader>
-                    加载 rt.jar包内的的类(java.lang包下等),由C++实现,没有父加载器,当试图获取这个类加载时，返回Null
+                    加载 rt.jar包内的的类(java.lang包下等),由C++实现,没有父加载器,当试图获取这个类加载器时，返回Null
             2  扩展类加载器<Extention ClassLoader>
                     加载 jri/ext 或 用户自定义指定目录下的 jar （ExtClassLoader.class）父加载器是Bootstrap ClassLoader，
-                    当试图获取这个类加载时，返回 ExtClassLoader.class
+                    当试图获取这个类加载器时，返回 ExtClassLoader.class
             3  应用（系统）类加载器<Application ClassLoader>
                     加载 classpath下 或 用户自定义的类；父加载器是Extention ClassLoader，
-                    当试图获取这个类加载时，返回 AppClassLoader.class
+                    当试图获取这个类加载器时，返回 AppClassLoader.class
 
        二  自定义类加载器（必须 extend ClassLoader 或 ClassLoader 的子类）
 
@@ -57,11 +57,11 @@ JVM 由 类加载子系统  运行时数据区  执行引擎  本地方法接口
 
     三  连接 （完成类的 <验证 准备 解析> 工作）
         1  验证阶段  验证字节码文件的正确性（是否符合java字节码规范）
-        2  准备阶段  为类的中静态变量分配空间并赋予<初始值>(string null, boolean = false, int = 0)
+        2  准备阶段  为类中的静态变量分配空间并赋予<初始值>(string null, boolean = false, int = 0)
         3  解析阶段  将类中的 <符号引用> 转化为 <直接引用>
 
     四  初始化（类的实例化，为类的实例对象在运行时数据区分配空间）
-        <子类被主动调用的时候回导致该类的所有父类或者接口会被初始化>
+        <子类被主动调用的时候会导致该类的所有父类或者接口会被初始化>
         当发生类的主动使用时会导致类的初始化，根据JVM规范 以下几种情况会导致类的初始化
 
 
