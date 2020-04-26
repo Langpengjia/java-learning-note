@@ -41,7 +41,7 @@ class Parent {
 
 class Child extends Parent {
 
-    public static String cstr = " Parent Str !";
+    public  static String cstr = " Child Str !";
 
     static {
         System.out.println(" Child static block !  ");

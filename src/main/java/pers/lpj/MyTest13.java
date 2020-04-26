@@ -51,13 +51,14 @@ public class MyTest13 {
         Class clazz4 =  String[].class;//和数组内元素的类加载器相同<MyTest14的类加载器为BootstrapClassLoader   return null>
         System.out.println(clazz4.getClassLoader());
 
+        //基本类型数组变量的类不是由类加载器加载的
         Class clazz5 =  int[].class;
         System.out.println(clazz5.getClassLoader());
 
 
-
-
         Comparable[] comparables = new Comparable[5];
+        Class<? extends Comparable[]> clazz6 = comparables.getClass();
+        System.out.println(clazz6.getClassLoader());
 
     }
 }

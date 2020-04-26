@@ -2,7 +2,7 @@ package pers.lpj;
 
 /**
  * @classname: MyTest6
- * @description:
+ * @description: 考察类加载和初始化时期各个变量的状态，格外注意成员变量 singletion 和 c2 在不同位置时的差异
  * @author: Desire
  * @date: 2019-12-23 14:05
  */
@@ -37,6 +37,7 @@ public class MyTest6 {
  */
 class Singletion {
 
+    private static Singletion singletion = new Singletion();
     public static int c1;
 
     /***
@@ -44,7 +45,7 @@ class Singletion {
      * 和初始化阶段的区别
      */
     public static int c2 = 0;
-    private static Singletion singletion = new Singletion();
+
 
 
     private Singletion() {
