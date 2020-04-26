@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @classname: Soluttion
- * @description:
+ * @description: 一些很经典的算法题，不算很难
  * @author: Desire
  * @date: 2020-01-19 14:25
  */

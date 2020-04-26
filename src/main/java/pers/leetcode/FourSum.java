@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @classname: ThreeSum
- * @description:
+ * @classname: FourSum
+ * @description: 四数求和 可以理解为三数求和的升级版，活用 游标理论 可以很快解决
  * @author: Desire
  * @date: 2020-01-16 9:56
  */

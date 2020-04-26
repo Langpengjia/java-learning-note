@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  * @classname: DecompressRLElist
- * @description:
+ * @description: 官方给出的答案，侧重于贪心算法
  * @author: Desire
  * @date: 2020-01-17 16:02
  */
