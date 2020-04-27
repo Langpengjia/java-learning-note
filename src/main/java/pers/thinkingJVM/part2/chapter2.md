@@ -2,11 +2,11 @@
 ## JVM 构成（Hotspots虚拟机--JVM规范）
 ### 类加载子系统
 #### 三种类加载器
-- **根（启动）类加载器 _Bootstrap ClassLoader_**
+- **根（启动）类加载器 _Bootstrap ClassLoader_**    
 &emsp;加载 rt.jar包内的的类(java.lang包下等),由C++实现,没有父加载器,当试图获取这个类加载器时，返回Null
-- **扩展类加载器 _Extention ClassLoader_**
+- **扩展类加载器 _Extention ClassLoader_**    
 &emsp;加载 jri/ext 或 用户自定义指定目录下的 jar （ExtClassLoader.class）父加载器是Bootstrap ClassLoader,当试图获取这个类加载器时，返回 ExtClassLoader.class
-- **应用（系统）类加载器 _Application ClassLoader_**
+- **应用（系统）类加载器 _Application ClassLoader_**    
 &emsp;加载 classpath下 或 用户自定义的类；父加载器是Extention ClassLoader，当试图获取这个类加载器时，返回AppClassLoader.class
 
 ### 运行时数据区
